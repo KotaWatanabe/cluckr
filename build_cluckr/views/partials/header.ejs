@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cluckr</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="/styles/main.css" rel="stylesheet">
+        <script src="/scripts/main.js"></script>
+    </head>
+    <body>
+        <header>
+        <% if (username) {%>
+        <nav class="navbar navbar-expand-lg navbar-primary ">
+            <a class="navbar-brand" href="/"><img src="/img/chicken-logo.jpg" alt="chicken_logo"></a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="/clucks/new"><button class="btn btn-secondary my-2 my-sm-0">Cluck!</button></a>
+                        <div class="nav-item nav-link"><div class="btn btn-light my-2 my-sm-0 nav_username"><%= username %></div></div>
+                        <form class="sign-out-form" action="/sign_out" method="POST">
+                        <div class="nav-item nav-link">
+                        <input class="btn btn-secondary" type="submit" value="Sign Out">
+                        </div>
+                        </form>   
+                    </div> 
+                 </div> 
+        </nav>           
+        <%}else{%>
+             <nav class="navbar navbar-expand-lg navbar-primary ">
+                    <a class="navbar-brand" href="/"><img src="/img/chicken-logo.jpg" alt="chicken_logo"></a>
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/clucks/new"><button class="btn btn-secondary my-2 my-sm-0">Cluck!</button></a>
+                    <a class="nav-item nav-link" href="/sign_in"><button class="btn btn-secondary my-2 my-sm-0">Sign In</button></a>
+                </div>    
+            
+        <% } %>
+                                     
+                
+        </header>
+        <main>
