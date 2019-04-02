@@ -1,0 +1,141 @@
+html {
+    /* Create a CSS variable by prefixing a word with -- */
+    --border-radius: 5px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+header{
+    font-size:1.6em;
+    border-bottom: 2px solid lightgray;
+    padding: 0 1em;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+  }
+
+.navbar-nav{
+    margin-left:auto;
+  
+}
+.navbar-nav .btn{
+    padding: 1em 3em;
+    font-size:1em;
+}
+.nav_username{
+    background:white;
+    border:none;
+    color:gray;
+}
+  
+body{
+    margin: 0;
+  }
+
+ main{
+    padding: 1em 3em;
+  }
+
+* {
+    font-family: inherit;
+  }
+
+  /* sign_in page */
+.sign_in{
+      border:1px solid lightgray;
+      border-radius: 0.5em;
+      padding: 1em;
+      padding-bottom: 4em;
+      font-size:1.6em;
+  }
+.sign-in-form{
+    position: relative;
+  }
+.sign-in-form .name_form{
+    font-size: inherit;
+    border-radius: var(--border-radius);
+    border:1px solid grey;
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+  }
+.sign-in-form label{
+    color:lightgray;
+    margin-bottom: 0;
+  }
+.sign_in_btn_area{
+    display:flex;
+}
+.sign_in_btn{
+    margin-left:auto;
+    padding: 0.5em 2em;
+    color:gray;
+    margin-top: 0.5em;
+    font-size:1em;
+    border:1px solid gray;
+}
+
+/* new page */
+.new{
+    border:1px solid lightgray;
+    border-radius:0.5em;
+    padding: 1em;
+    font-size:1.6em;
+    color:gray;
+}
+.content textarea,
+.image_url input{
+    border-radius:0.5em;
+    color:gray;
+    width:100%;
+}
+
+.new_btn_area{
+    display:flex;
+    margin-top: 0.5em;
+}
+.new_btn{
+    margin-left:auto;
+    padding:0.5em 2em;
+    color:gray;
+    font-size:1em;
+    border:1px solid gray;
+}
+
+
+/* index */
+
+.cluck{
+    display:flex;
+}
+.img{
+    flex:1;
+}
+.main_content{
+    flex:6;
+    text-align: left;
+}
+.index_username{
+    color: gray;
+    margin-bottom: 0;
+    margin-right: 0.5em;
+    font-size:1.5em;
+}
+.index_timestamp{
+    color: gray;
+    font-size:1em;
+}
+.index_content{
+    color: gray;
+    font-size:1.2em;
+}
+
+  li{
+      list-style:none;
+      border: 1px solid gray;
+      border-radius: 1em;
+      margin-bottom: 1em;
+      padding: 1em;
+  }
+  

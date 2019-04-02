@@ -1,0 +1,24 @@
+<%- include("../partials/header")%>
+
+<main>
+    <div class="new">
+        <form class="new_form" action="/clucks" method="POST">
+            <div class="content">
+                <label for="content">Contents</label><br>
+                <textarea class="content"name="content"cols="50"rows="4"placeholder="Wahtchoo cluckin''bout?"></textarea>
+            </div>
+
+            <div class="image_url">
+                <label for="image_url">Image Url</label><br>
+                <input class="image_url" type="text" name="image_url" placeholder="e.g. https://www.example.com/some.png">
+            </div>
+
+            <div class="new_btn_area">
+                <input class="btn btn-light new_btn" type="submit" value="Cluck!">
+            </div>
+        </form>
+    </div>
+</main>
+
+
+<%- include("../partials/footer")%>
